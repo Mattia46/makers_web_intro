@@ -4,14 +4,6 @@ get '/' do
   "Hello world"
 end
 
-get '/secret' do
-  "Secret message!!!!!!!!"
-end
-
-get '/secret/another_secret' do
-  "A secret secret!"
-end
-
-get '/test' do
-  "nothing"
+get '/cat' do
+  '<img src="https://aroadtoadventure.files.wordpress.com/2015/02/monkeys-riding-pig.jpg" style="border:10px dotted red">'
 end
