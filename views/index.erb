@@ -1,2 +1,10 @@
-<h1>My name is <%= @name %></h1>
+<h1>My name is <%= @name %> and I am <%= @age %></h1>
 <img src="https://aroadtoadventure.files.wordpress.com/2015/02/monkeys-riding-pig.jpg" style="border:10px dashed red">
+
+<% if @name == nil %>
+<form action="/named-cat">
+  <input type="text" name="name"/>
+  <input type="text" name="age"/>
+  <input type="submit" value="Submit"/>
+</form>
+<% end %>
